@@ -4308,12 +4308,17 @@ a:hover {
     z-index:99;
 }
 .product-item .image{
-    height: 250px;
+    height: 205px;
     border-bottom:1px solid #f6f6f4;
 }
 .product-item .info{
     text-align: center;
     padding: 15px 0 0 0;
+
+    .description{
+        height:40px;
+        overflow: hidden;
+    }
 }
 .product-item .info .title{
     height:40px;
@@ -5752,5 +5757,23 @@ h3 span{
         font-size:20px;
         font-weight: bold;
         color: red;
+    }
+}
+
+.prd-shipping-policy{
+    table{
+        float:none !important;
+        td{
+            padding:10px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .panel-slide{
+        .swiper-button-prev,
+        .swiper-button-next{
+            display: none;
+        }
     }
 }

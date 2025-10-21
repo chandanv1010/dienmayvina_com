@@ -26,6 +26,7 @@
                                 $image = $valPost->image;
                                 $href  = write_url($valPost->languages->first()->pivot->canonical);
                                 $description = cutnchar(strip_tags($valPost->languages->first()->pivot->description), 100);
+                                $price = getPrice($valPost);
                             @endphp
 
                                 <li class="mb10">
@@ -35,16 +36,13 @@
                                     <img src="{{ $image }}" alt="{{ $title }}">
                                     </a>
                                     <div class="info">
-                                    <h3 class="title" title="{{ $title }}">
-                                        <a href="{{ $href }}" title="{{ $title }}">{{ $title }}</a>
-                                    </h3>
-                                    <div class="description">{!! $description !!}</div>
-                                    <div class="contact-us-1">
-                                        <a href="{{ $href }}" title="{{ $title }}">
-                                        Liên Hệ: {{ $general['contact_hotline'] ?? '' }}
-                                        {{-- Nếu cần giữ $this->general như bản gốc: {!! $this->general['contact_hotline'] ?? '' !!} --}}
-                                        </a>
-                                    </div>
+                                        <h3 class="title" title="{{ $title }}">
+                                            <a href="{{ $href }}" title="{{ $title }}">{{ $title }}</a>
+                                        </h3>
+                                        <div class="description">{!! $description !!}</div>
+                                         <div class="mt10">
+                                            {!! $price['html'] !!}
+                                        </div>
                                     </div>
                                 </div>
                                 </li>

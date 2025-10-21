@@ -1,6 +1,6 @@
 {
   "resources/css/app.scss": {
-    "file": "assets/app-36436de1.css",
+    "file": "assets/app-e66ae42d.css",
     "isEntry": true,
     "src": "resources/css/app.scss"
   },
@@ -61,11 +61,11 @@
   },
   "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff": {
     "file": "assets/fontawesome-webfont-ba0c59de.woff",
-    "src": "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff"
+    "src": "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff"
   },
   "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff2": {
     "file": "assets/fontawesome-webfont-2adefcbc.woff2",
-    "src": "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2"
+    "src": "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff2"
   },
   "resources/vendor/backend/fonts/glyphicons-halflings-regular.eot": {
     "file": "assets/glyphicons-halflings-regular-13634da8.eot",
@@ -117,11 +117,11 @@
   },
   "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff": {
     "file": "assets/fontawesome-webfont-ba0c59de.woff",
-    "src": "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff"
+    "src": "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff"
   },
   "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2": {
     "file": "assets/fontawesome-webfont-2adefcbc.woff2",
-    "src": "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2"
+    "src": "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff2"
   },
   "resources/vendor/frontend/resources/fonts/uicons-regular-straight.woff2": {
     "file": "assets/uicons-regular-straight-e013f9ca.woff2",

@@ -51,13 +51,15 @@
                     </h2>
 
                     @if(isset($val->products) )
-                        <ul class="uk-list uk-clearfix uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4">
+                        <ul class="uk-list uk-clearfix uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5">
                             @foreach($val->products as $keyPost => $valPost)
                                 @php
+                                    if($keyPost > 9) break;
                                     $title = $valPost->languages[0]->name;
                                     $image = $valPost->image;
                                     $href = write_url($valPost->languages[0]->canonical);
                                     $description = cutnchar(strip_tags($valPost->languages[0]->description), 100);
+                                    $price = getPrice($valPost);
                                 @endphp
 
                                 <li class="mb10">
@@ -71,10 +73,8 @@
                                                 <a href="{{ $href }}" title="{{ $title }}">{{ $title }}</a>
                                             </h3>
                                             <div class="description">{!! $description !!}</div>
-                                            <div class="contact-us-1">
-                                                <a href="{{ $href }}" title="{{ $title }}">
-                                                    Liên Hệ: {{ $system['contact_hotline'] ?? '' }}
-                                                </a>
+                                            <div class="mt10">
+                                                {!! $price['html'] !!}
                                             </div>
                                         </div>
                                     </div>
