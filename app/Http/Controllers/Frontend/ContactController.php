@@ -36,11 +36,11 @@ class ContactController extends FrontendController
         $config = $this->config();
         $system = $this->system;
         $seo = [
-            'meta_title' => 'Contact Us',
-            'meta_description' => 'Contact '.$system['homepage_company'],
+            'meta_title' => 'Liên Hệ',
+            'meta_description' => 'Liên Hệ '.$system['homepage_company'],
             'meta_keyword' => '',
             'meta_image' => '',
-            'canonical' => write_url('contact-us')
+            'canonical' => write_url('lien-he')
         ];
         $template = 'frontend.contact.index';
         

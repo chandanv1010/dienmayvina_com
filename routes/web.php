@@ -34,7 +34,7 @@ require __DIR__ . '/web/custom.route.php';
 /* FRONTEND ROUTES  */
 Route::group(['middleware' => ['locale']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home.index');
-    Route::get('contact-us.html', [FeContactController::class, 'index'])->name('contact.index');
+    Route::get('lien-he.html', [FeContactController::class, 'index'])->name('contact.index');
     Route::get('/thumb', [App\Http\Controllers\ImageResizerController::class, 'resize'])->name('thumb');
 
     Route::get('tim-kiem', [FeProductCatalogueController::class, 'search'])->name('product.catalogue.search');
