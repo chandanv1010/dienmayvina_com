@@ -43,7 +43,7 @@
                                             @foreach($valChildren['children'] as $valS)
                                              @php
                                                 $nameS = $valS['item']->languages->first()->pivot->name;
-                                                $canonicalS = write_url($valS['item']->languages->first()->pivot->name);
+                                                $canonicalS = write_url($valS['item']->languages->first()->pivot->canonical);
                                             @endphp
                                                 <li>
                                                     <a href="{{ $canonicalS }}" title="{{ $nameS }}">{{ $nameS }}</a>

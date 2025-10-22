@@ -161,25 +161,14 @@ class ProductController extends FrontendController
         ];
 
         $productRelated = $this->productRepository->getRelated(6, $product->product_catalogue_id, $product->id);
-
-
         Cart::instance('seen')->add($productSeen);
-
         $cartSeen = Cart::instance('seen')->content();
-
-
         $carts = Cart::instance('shopping')->content() ?? null;
-
         $config = $this->config();
-
         $customer = Auth::guard('customer')->user();
-
         $voucher_product = (!is_null($customer)) ? $this->voucherService->getVoucherForProduct($id, $carts, $customer->id) : null;
-
         $system = $this->system;
-
         $seo = seo($product);
-
         $schema = $this->schema($product, $productCatalogue, $breadcrumb);
         $template = 'frontend.product.product.index';
 
