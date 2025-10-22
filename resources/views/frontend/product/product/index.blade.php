@@ -167,7 +167,7 @@
                     <ul class="uk-list uk-clearfix uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4">
                         @foreach ($productCatalogue->products as $key => $valPost)
                             @php
-                                if($key > 8) break;
+                                if($key > 7) break;
                                 $title = $valPost->languages->first()->pivot->name;
                                 $image = $valPost->image;
                                 $href = write_url($valPost->languages->first()->pivot->canonical);
