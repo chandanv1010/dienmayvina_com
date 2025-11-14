@@ -20,7 +20,7 @@
                             <div class="description">
                                 {!! $post->content !!}
                             </div>
-                            @if (isset($postCatalogue->posts) && !is_null($postCatalogue->posts))
+                            @if (isset($postCatalogue->posts) && !is_null($postCatalogue->posts) && $post->canonical !== 've-chung-toi')
                                 <div class="artdetail-relate style-1 mt30">
                                     <div class="heading-1 mb10">
                                     <span>Bài viết liên quan</span>
