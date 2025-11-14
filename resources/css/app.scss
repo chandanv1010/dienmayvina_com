@@ -5777,3 +5777,19 @@ h3 span{
         }
     }
 }
+
+.uk-nav-offcanvas ul a{
+    color:#000;
+}
+.uk-nav-offcanvas > li > a{
+    padding: 10px 15px;
+}
+.moblie-menu-btn>*:before, .moblie-menu-btn>*:after,
+.moblie-menu-btn>*{
+    background: #fff;
+}
+.product-item{
+    .price{
+        justify-content: center;
+    }
+}
