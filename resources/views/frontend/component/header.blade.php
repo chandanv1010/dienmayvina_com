@@ -63,7 +63,7 @@
 	</section><!-- .upper -->
 	<section class="lower">
 		<div class="mobile-search">
-			<form action="<?php echo write_url('tim-kiem'); ?>" method="" class="uk-form form">
+			<form action="tim-kiem" method="" class="uk-form form">
 				<input type="text" name="keyword" class="uk-width-1-1 input-text" placeholder="Bạn muốn tìm gì hôm nay?" />
 				<button type="submit" name="" value="" class="btn-submit">Tìm kiếm</button>
 			</form>
